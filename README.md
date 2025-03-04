@@ -2,6 +2,8 @@
 
 `meowifier-web` is a project that demonstrates the use of [`React`](https://react.dev/) for the frontend and [`Flask`](https://flask.palletsprojects.com/en/stable/) for the backend
 
+![example](https://github.com/krovskiy/meowifier-web/blob/main/example.gif)
+
 ## Features
 
 Enter any text, and the meowifier will transform it by randomly replacing some words with `"meow"` and stretching vowels in others.
