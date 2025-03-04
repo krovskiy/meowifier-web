@@ -1,10 +1,10 @@
-# Meowifier
+# meowifier-web
 
-Meowifier is a project that demonstrates the use of React for the frontend and Flask for the backend
+`meowifier-web` is a project that demonstrates the use of [`React`](https://react.dev/) for the frontend and [`Flask`](https://flask.palletsprojects.com/en/stable/) for the backend
 
 ## Features
 
-Enter any text, and the meowifier will transform it by randomly replacing some words with "meow" and stretching vowels in others.
+Enter any text, and the meowifier will transform it by randomly replacing some words with `"meow"` and stretching vowels in others.
 
 ## Technologies Used
 
@@ -49,25 +49,20 @@ Enter any text, and the meowifier will transform it by randomly replacing some w
 
 ### Running the Frontend
 
-1. navigate to the directory:
+1. Navigate to the directory:
     ```sh
     cd meowifier
     ```
 
-2. start the development server:
+2. Start the development server:
     ```sh
     npm run dev
     ```
 
 ### Running the Backend
 
-1. navigate to the project root directory:
-    ```sh
-    cd ..
+Start the flask server:
     ```
-
-2. start the flask server:
-    ```sh
     python app.py
     ```
 
