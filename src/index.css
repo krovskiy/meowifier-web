@@ -42,8 +42,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #646cff;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: border-color 0.10s;
   display: flex;
@@ -53,7 +53,7 @@ button {
   height: 150px;
 }
 button:hover {
-  border-color: #21a73e;
+  border-color: #727272;
 }
 button:focus,
 button:focus-visible {
