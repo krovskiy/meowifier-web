@@ -4,31 +4,18 @@
 
 ![example](https://github.com/krovskiy/meowifier-web/blob/main/example.gif)
 
-## Features
+## features
 
-Enter any text, and the meowifier will transform it by randomly replacing some words with `"meow"` and stretching vowels in others.
+enter any text => stretch vowels and add occasional `meows`
 
-## Technologies Used
+## installation
 
-### Frontend
-
-- **React**: A JavaScript library for building user interfaces.
-- **Axios**: A promise-based HTTP client for making API requests.
-- **CSS**: Styling the application.
-
-### Backend
-
-- **Flask**: A lightweight WSGI web application framework in Python.
-- **Flask-CORS**: A Flask extension for handling Cross-Origin Resource Sharing (CORS).
-
-## Installation
-
-### Prerequisites
+### prerequisites
 
 - Node.js and npm
 - Python and pip
 
-### Steps
+### steps
 
 1. **Clone the repository**:
     ```sh
@@ -36,38 +23,43 @@ Enter any text, and the meowifier will transform it by randomly replacing some w
     cd meowifier
     ```
 
-2. **Install frontend dependencies**:
+2. **install frontend dependencies**:
     ```sh
     cd meowifier
     npm install
     ```
 
-3. **Install backend dependencies**:
+3. **install backend dependencies**:
     ```sh
+    python -m venv .
+    // windows
+    .\Scripts\activate
+    // linux
+    source bin/activate
     pip install flask flask-cors
     ```
 
-## Usage
+## usage
 
-### Running the Frontend
+### running the frontend
 
-1. Navigate to the directory:
+1. navigate to the directory:
     ```sh
     cd meowifier
     ```
 
-2. Start the development server:
+2. start the development server:
     ```sh
     npm run dev
     ```
 
 ### Running the Backend
 
-Start the flask server:
+start the flask server:
     ```
     python app.py
     ```
 
-### Accessing the application
+### access
 
-Open your web browser and go to `http://localhost:3000` to access the meowifier application.
+`http://localhost:3000` to access the meowifier application
