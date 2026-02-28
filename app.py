@@ -1,14 +1,17 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from random import randint
 from random import random
 from re import sub
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/meow', methods=['POST'])
 def main():
     data = request.json
     text = data.get('text', '')
+    original_text = text
 
     text = text.split()
 
@@ -26,7 +29,7 @@ def main():
     result = meowified_text
     
     return jsonify({
-        'text': text,
+        'text': original_text,
         'result': result
     })
 
