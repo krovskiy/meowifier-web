@@ -1,11 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 from random import randint
 from random import random
 from re import sub
 
 app = Flask(__name__)
-CORS(app)
 
 @app.route('/meow', methods=['POST'])
 def main():
