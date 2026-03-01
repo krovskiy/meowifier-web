@@ -2,7 +2,7 @@
 
 `meowifier-web` is a project that demonstrates the use of [`React`](https://react.dev/) for the frontend and [`Flask`](https://flask.palletsprojects.com/en/stable/) for the backend
 
-![example](https://github.com/krovskiy/meowifier-web/blob/main/example.gif)
+![example](https://github.com/krovskiy/meowifier-web/blob/main/docs/example.gif)
 
 ## features
 
@@ -15,51 +15,49 @@ enter any text => stretch vowels and add occasional `meows`
 - Node.js and npm
 - Python and pip
 
-### steps
+### development
 
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/krovskiy/meowifier
-    cd meowifier
-    ```
+(port 5173)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-2. **install frontend dependencies**:
-    ```sh
-    cd meowifier
-    npm install
-    ```
+(port 5000)
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-3. **install backend dependencies**:
-    ```sh
-    python -m venv .
-    // windows
-    .\Scripts\activate
-    // linux
-    source bin/activate
-    pip install flask flask-cors
-    ```
+frontend proxies API calls to backend automatically
 
-## usage
+### production
 
-### running the frontend
+```bash
 
-1. navigate to the directory:
-    ```sh
-    cd meowifier
-    ```
+cd frontend
+npm install
+npm run build
 
-2. start the development server:
-    ```sh
-    npm run dev
-    ```
+# serves port 5000
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-### Running the Backend
+### docker
+```bash
+docker-compose -f deploy/docker-compose.yml up
+```
 
-start the flask server:
-    ```
-    python app.py
-    ```
+### systemd
 
-### access
-
-`http://localhost:3000` to access the meowifier application
+```bash
+sudo useradd -m -s /bin/bash meowifier
+sudo cp deploy/meowifier.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable meowifier
+sudo systemctl start meowifier
+```
