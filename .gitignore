@@ -1,7 +1,7 @@
-Include/
-Lib/
-Scripts/
-pyvenv.cfg
+backend/Include/
+backend/Lib/
+backend/Scripts/
+backend/pyvenv.cfg
 .env.local
 .env
 node_modules/
@@ -16,3 +16,4 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+!backend/requirements.txt
