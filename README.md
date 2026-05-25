@@ -1,6 +1,6 @@
 # meowifier-web
 
-`meowifier-web` is a project that demonstrates the use of [`React`](https://react.dev/) for the frontend and [`Flask`](https://flask.palletsprojects.com/en/stable/) for the backend
+give it some text and get a more meowy version back. the frontend uses [`React`](https://react.dev/) and the backend uses [`Flask`](https://flask.palletsprojects.com/en/stable/)
 
 ![example](https://github.com/krovskiy/meowifier-web/blob/main/docs/example.gif)
 
@@ -42,7 +42,7 @@ npm install
 npm run build
 
 # serves port 5000
-cd backend
+cd ../backend
 pip install -r requirements.txt
 python app.py
 ```
