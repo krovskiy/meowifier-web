@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
+import githubIcon from './assets/imgs/github.svg';
 import './App.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || '';
 
 function App() {
   const [catFact, setCatFact] = useState('');
@@ -40,7 +41,7 @@ function App() {
       <button className="textButton" onClick={click}>press me</button>
       {resultText && <h2 className="result">{resultText}</h2>}
       <p className="catFact">{catFact}</p>
-      <div class="link"><a href="https://github.com/krovskiy/meowifier-web"><img src="./src/assets/imgs/github.svg"/></a></div>
+      <div className="link"><a href="https://github.com/krovskiy/meowifier-web"><img src={githubIcon} alt="GitHub" /></a></div>
     
     </div>
   );
